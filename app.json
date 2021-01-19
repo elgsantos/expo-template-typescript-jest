@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "app1",
-    "slug": "app1",
+    "name": "react-native-template-expo-typescript-jest",
+    "slug": "react-native-template-expo-typescript-jest",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
