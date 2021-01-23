@@ -15,7 +15,6 @@ module.exports = {
     "^.+\\.tsx?$": "ts-jest"
   },
   testMatch: [
-    "**/__tests__/**/*.ts?(x)",
     "**/?(*.)+(spec|test).ts?(x)"
   ],
   collectCoverageFrom: [
