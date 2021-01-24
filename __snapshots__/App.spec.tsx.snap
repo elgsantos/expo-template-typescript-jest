@@ -11,6 +11,16 @@ exports[`<App /> matches last snapshot 1`] = `
     }
   }
 >
+  <Image
+    source={1}
+    style={
+      Object {
+        "height": 120,
+        "margin": 10,
+        "width": 120,
+      }
+    }
+  />
   <Text>
     Open up App.tsx to start working on your app!
   </Text>
