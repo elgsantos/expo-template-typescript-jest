@@ -82,7 +82,9 @@ To get this template up and running follow these simple steps.
 ### Installation
 
 Create a project with this template:
->`expo init --template expo-template-typescript-jest`
+  ```sh
+  expo init --template expo-template-typescript-jest
+  ```
 
 (It will prompt you to enter a project name)
 
