@@ -5,7 +5,9 @@
 ![IOS][ios-shield]
 ![Android][android-shield]
 ![Web][web-shield]
+![Typescript][typescript-shield]
 [![Tested with jest][jest-shield]][jest-url]
+![coverage][cov-shield]
 [![Stars][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
@@ -113,6 +115,10 @@ There are some examples of tsx testing, snapshot test and function test inside t
   ```sh 
   yarn test:watch
   ```
+- To generate coverage badges:
+  ```sh
+  yarn test:badge
+  ```
 
 ### Using npm
 If you prefer to use npm reather than using yarn, make the following changes:
@@ -120,9 +126,10 @@ If you prefer to use npm reather than using yarn, make the following changes:
 - Change test scripts to use npm in package.json
   ```json
     "test:watch": "npm test --watch",
-    "test:ci": "npm test --coverage"
+    "test:ci": "npm test --coverage",
+    "test:badges": "npm run test:ci  && jest-coverage-badges --input coverage/coverage-summary.json --output __badges__"
   ```
-- Run commands with npm: `npm start`, `npm test`, `npm run test:watch`, `npm run test:ci`
+- Run commands with npm: `npm start`, `npm test`, `npm run test:watch`, `npm run test:ci`, `npm run test:badges`
 
 ## Contributing
 
@@ -145,18 +152,21 @@ Eduardo Santos - [elgsantos][github-url]
 Project Link: [https://github.com/elgsantos/expo-template-typescript-jest](https://github.com/elgsantos/expo-template-typescript-jest)
 
 ## Acknowledgements
-* [Expo blank typescript template](https://docs.expo.io/guides/typescript/)
+* [Expo Blank Typescript Template](https://docs.expo.io/guides/typescript/)
 * [Img Shields](https://shields.io)
-* [README template](https://github.com/othneildrew/Best-README-Template)
 * [Faker](https://github.com/Marak/Faker.js#readme)
+* [Test Renderer](https://reactjs.org/docs/test-renderer.html)
+* [README template](https://github.com/othneildrew/Best-README-Template)
+* [Jest Coverage Badges](https://www.npmjs.com/package/jest-coverage-badges)
 
 <!-- MARKDOWN LINKS -->
+[cov-shield]: ./__badges__/badge-lines.svg
 [repo-screenshot]: https://user-images.githubusercontent.com/8595291/105619692-ea944400-5dd3-11eb-86b9-f3a9279d4389.jpg
 [npm-shield]: https://img.shields.io/npm/v/expo-template-typescript-jest?style=flat
 [package-url]: https://www.npmjs.com/package/expo-template-typescript-jest
 [expo-shield]: https://img.shields.io/badge/Runs%20with%20Expo-000.svg?style=flat&logo=EXPO&labelColor=f3f3f3&logoColor=000&label=SDK%2040
 [expo-url]: https://expo.io/
-[ios-shield]: https://img.shields.io/static/v1?logo=TYPESCRIPT&message=TypeScript&style=flat&color=3178C6&logoColor=fff&labelColor=gray&label=
+[typescript-shield]: https://img.shields.io/static/v1?logo=TYPESCRIPT&message=TypeScript&style=flat&color=3178C6&logoColor=fff&labelColor=gray&label=
 [ios-shield]: https://img.shields.io/static/v1?logo=APPLE&message=iOS&style=flat&color=black&logoColor=fff&labelColor=gray&label=
 [android-shield]: https://img.shields.io/static/v1?logo=ANDROID&message=Android&style=flat&logoColor=fff&color=A4C639&labelColor=gray&label=
 [web-shield]: https://img.shields.io/static/v1?logo=GOOGLE-CHROME&message=Web&style=flat&logoColor=fff&color=4285F4&labelColor=gray&label=
