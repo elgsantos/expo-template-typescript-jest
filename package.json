@@ -20,7 +20,6 @@
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
-    "@babel/core": "~7.9.0",
     "@types/expo": "^33.0.1",
     "@types/faker": "^5.1.5",
     "@types/jest": "^26.0.20",
