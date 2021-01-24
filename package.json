@@ -47,6 +47,5 @@
     "url": "https://github.com/elgsantos/expo-template-typescript-jest/issues"
   },
   "author": "Eduardo Santos",
-  "license": "MIT",
-  "private":"false"
+  "license": "MIT"
 }
